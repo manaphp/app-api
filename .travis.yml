@@ -21,7 +21,7 @@ before_deploy:
       - git config --local user.name "Mark"
       - git config --local user.email "manaphp@qq.com"
       - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%y%m%d')-$(git log --format=%h -1)}
-      - git tag $TRAVIS_TAG
+      - git tag $TRAVIS_TAG --force
       - env
       - export RELEASE_NAME=${TRAVIS_REPO_SLUG/\//_}_$TRAVIS_TAG.zip
       - mv release.zip $RELEASE_NAME
@@ -36,4 +36,3 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-    repo: manaphp/app-api

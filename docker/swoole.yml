@@ -11,13 +11,3 @@ services:
     ports:
       - ${WEB_PORT}:9501
     restart: always
-  redis:
-    image: redis:4.0.14
-    volumes:
-      - /usr/share/zoneinfo/PRC:/etc/localtime
-      - /data/volumes/${COMPOSE_PROJECT_NAME}/redis/data/:/data/
-      - ./redis/conf:/etc/redis
-    ports:
-      - ${REDIS_PORT}:6379
-    command: redis-server /etc/redis/redis.conf
-    restart: always  

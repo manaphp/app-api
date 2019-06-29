@@ -29,7 +29,7 @@ composer  create-project manaphp/app-api app-api
 
 ## 开发文档
 
-https://github.com/manaphp/docs
+http://docs.manaphp.com/
 
 ## 技术交流
 

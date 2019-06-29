@@ -35,5 +35,12 @@
       "!vendor",
       ".travis.yml"
     ]
-  }
+  },
+  "keywords": [
+    "manaphp",
+    "phalcon",
+    "laravel",
+    "yii2",
+    "api"
+  ]
 }

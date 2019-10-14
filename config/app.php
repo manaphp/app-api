@@ -20,8 +20,8 @@ return [
     'plugins' => [
         'cors',
         'tracer',
-        'slowlog',
-        'debugger',
-        'logger',
+        //'slowlog',
+        //'debugger',
+        //'logger',
     ]
 ];

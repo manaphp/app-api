@@ -10,4 +10,9 @@ class IndexController extends Controller
     {
         return City::first([]);
     }
+
+    public function helloAction()
+    {
+        return $this->response->setJsonContent(['data' => 'Hello ManaPHP']);
+    }
 }

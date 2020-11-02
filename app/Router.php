@@ -2,7 +2,6 @@
 
 namespace App;
 
-use App\Controllers\IndexController;
 use App\Controllers\TimeController;
 
 class Router extends \ManaPHP\Router

@@ -16,6 +16,7 @@ class TimeController extends Controller
         $data = [];
         $data['current_time'] = date('Y-m-d H:i:s');
         $data['memory_usage'] = round(memory_get_usage(false) / 1024) . 'KB';
-        return $this->response->setJsonContent($data);
+
+        return $data;
     }
 }

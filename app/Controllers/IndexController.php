@@ -13,6 +13,6 @@ class IndexController extends Controller
 
     public function helloAction()
     {
-        return $this->response->setJsonContent(['data' => 'Hello ManaPHP']);
+        return $this->response->setJsonData('Hello ManaPHP');
     }
 }

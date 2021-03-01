@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Plugins;
 
 /**
  * @property-read \ManaPHP\Logging\LoggerInterface       $logger
@@ -9,7 +9,7 @@ namespace App\Controllers;
  * @property-read \Redis                                 $redisCache
  * @property-read \Redis                                 $redisBroker
  */
-class Controller extends \ManaPHP\Rest\Controller
+class Plugin extends \ManaPHP\Plugin
 {
 
 }

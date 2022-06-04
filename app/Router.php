@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace App;
 
@@ -8,7 +9,7 @@ class Router extends \ManaPHP\Http\Router
 {
     public function __construct()
     {
-        $this->_prefix = '/api';
+        $this->prefix = '/api';
 
         parent::__construct(true);
         $this->add('/', 'index::hello');

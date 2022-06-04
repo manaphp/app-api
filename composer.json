@@ -2,15 +2,20 @@
   "name": "manaphp/app-api",
   "description": "ManaPHP Api Application",
   "type": "project",
-  "require": {
-    "manaphp/framework": "dev-master"
-  },
   "license": "MIT",
+  "homepage": "https://github.com/manaphp/app-api",
   "authors": [
     {
       "name": "ManaPHP Mark",
       "email": "manaphp@qq.com"
     }
+  ],
+  "keywords": [
+    "manaphp",
+    "phalcon",
+    "laravel",
+    "yii2",
+    "api"
   ],
   "autoload": {
     "psr-4": {
@@ -36,11 +41,10 @@
       ".travis.yml"
     ]
   },
-  "keywords": [
-    "manaphp",
-    "phalcon",
-    "laravel",
-    "yii2",
-    "api"
-  ]
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=8.0.2",
+    "ext-json": "*",
+    "manaphp/framework": "dev-master"
+  }
 }

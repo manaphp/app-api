@@ -43,6 +43,7 @@
   },
   "minimum-stability" : "dev",
   "require" : {
+    "php" : ">=8.1",
     "manaphp/framework" : "3.1.*"
   }
 }
